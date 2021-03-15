@@ -15,7 +15,7 @@ There are a few ways we will write down paths that will make writing them down a
 * `>>`: This arrow will be used to denote teleporting to a room, this game mechanic is only used in the Orb of Life dungeon. E.g., `(0,0)>>(5,4)` means we teleported from room `(0,0)` to room `(5,4)`.
 * `=<`: This arrow will be used to denote when we return to a certain room the same way we got to the current room from there. E.g., `(0,0)=>(5,4)->(5,5)>>(3,1)=<(0,0)` is the same as writing `(0,0)=>(5,4)->(5,5)>>(3,1)>>(5,5)->(5,4)=>(0,0)`.
 
-We will also be denoting repeated screen changes since these sometimes happen \(for example in Any% Golden Spider\), these will be denoted with `{(x1,y1 ).<->(x2,y2)}a` where `(x1,y1)` is the room we first enter and `a` is the amount of times we switch room. The dot next to the arrow indicates which room we end in. If the repeated screen changes happen because of teleporters `<->` will be replaced with `<<>>`. E.g., `(2,-4)->(2,-3)->(2,-4)->(2,-3)->(2,-4)` becomes `{(2,-4).<->(2,3)}4`. This way of writing down screenchanges main only be used over normal notation if `a` is larger or equal to 3.
+We will also be denoting repeated screen changes since these sometimes happen \(for example in Any% Golden Spider\), these will be denoted with `{(x1,y1 ).<->(x2,y2)}a` where `(x1,y1)` is the room we first enter, `(x2,y2)` is the adjacent room we are switching between, and `a` is the amount of times we switch rooms. The dot next to the arrow indicates which room we end in. If the repeated screen changes happen because of teleporters `<->` will be replaced with `<<>>`. E.g., `(2,-4)->(2,-3)->(2,-4)->(2,-3)->(2,-4)` becomes `{(2,-4).<->(2,3)}4`. This way of writing down screenchanges may only be used over normal notation if `a` is greater than or equal to 3.
 
 ### Rule of Simplicity
 
@@ -35,14 +35,12 @@ If multiple ways of writing the same path exist that are all the same length, th
 
 There are quite a few collectibles in this game, we will be using these symbols to denote collecting them:
 
-* `*`: This symbol next to a room will be used to denote essential collectibles, like diamonds in Chalice of The Gods. E.g., `(3,4)*` means that in the room `(3,4)` we collect an essential collectible.
+* `*`: This symbol next to a room will be used to denote any essential collectibles, like diamonds in Chalice of The Gods, or scrolls in 100% runs. E.g., `(3,4)*` means that in the room `(3,4)` we collect an essential collectible.
 * `$`: This symbol will, unsurprisingly, be used to denote collecting coins. To symbolize how many coins you collect in a given room we will put a number behind the symbol. E.g., `(4,3)$5` means we collected 5 coins in room `(4,3)`.
-* `♥`: This symbol will denote picking up a heart container. E.g. `(4,3)♥` means we picked up a heart container in room `(4,3)`.
 * `%`: This symbol will be used to denote rooms where it is important to pick up ammo. E.g., `(5,2)Φ` means we picked up ammo in room `(5,2)`.
-* `⊡`: This symbol will be used to denote picking up a scroll. E.g., `(-1,3)⊡` means we picked up a scroll in room `(-1,3)`.
 * `!`: This symbol will denote the end of a dungeon. E.g., `(5,4)!` means room `(5,4)` is an ending room in a dungeon.
 
-These symbols will only be denoted in routes where they matter and will always be in order of importance behind a room: `(x,y)!⊡*$♥%`.
+These symbols will only be denoted in routes where they matter and will always be in order of importance behind a room: `(x,y)!*$%`.
 
 ## Modifiers
 
