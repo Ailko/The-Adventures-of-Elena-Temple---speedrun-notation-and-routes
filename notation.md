@@ -44,5 +44,5 @@ For the full game runs modifiers also must be collected, this is how they will b
 
 ## Menuing 
 In full game runs some menuing can be used, to denote this we will use the following notation:
-- ``⊗``: Will denote exiting a dungeon.
+- ``[X]``: Will denote exiting a dungeon.
 - ``[a]``: Will denote selecting a dungeon, ``[1]`` for Chalice of The Gods, ``[2]`` for Golden Spider, and ``[3]`` for Orb of Life.
