@@ -22,6 +22,6 @@ jobs:
     - name: setup
       run: git config --global user.name "Ailko" ; git clone https://github.com/Ailko/The-Adventures-of-Elena-Temple---speedrun-notation-and-routes.git ; git fetch origin
     - name: merge to master
-      run: git checkout master && git merge main
+      run: git checkout master && git merge main --allow-unrelated-histories
     - name: merge to main
       run: git checkout main && git merge master
