@@ -20,7 +20,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: fetch
-      run: git clone origin ; git fetch origin
+      run: git fetch origin ; git clone origin/master 
     - name: merge to master
       run: git checkout main && git merge master
     - name: merge to main
