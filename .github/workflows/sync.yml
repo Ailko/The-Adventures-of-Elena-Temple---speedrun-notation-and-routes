@@ -20,4 +20,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: sync
-      run: git merge master && git checkout master && git merge main && git push origin && git checkout main && git push origin
+      run: git merge master && git push origin ; git checkout master && git merge main && git push origin
