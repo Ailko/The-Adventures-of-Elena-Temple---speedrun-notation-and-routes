@@ -20,8 +20,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: fetch
-      run: git fetch origin
+      run: git fetch origin ; git fetch origin
     - name: merge to master
-      run: git checkout origin/main && git merge origin/master
+      run: git checkout main && git merge master
     - name: merge to main
-      run: git checkout origin/master && git merge origin/main
+      run: git checkout master && git merge main
