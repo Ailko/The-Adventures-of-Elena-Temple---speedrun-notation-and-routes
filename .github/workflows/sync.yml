@@ -21,4 +21,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: merge to master
       run: git merge origin/master
-    - name: git checkout origin/master && git merge main && git checkout main && git push origin
+    - name: merge to main
+      run: git checkout origin/master && git merge main && git checkout main && git push origin
