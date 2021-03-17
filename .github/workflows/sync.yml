@@ -19,7 +19,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: fetch
+      run: fetch origin
     - name: merge to master
-      run: git merge origin/master
+      run: git merge master
     - name: merge to main
       run: git checkout origin/master && git merge main && git checkout main && git push origin
