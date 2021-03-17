@@ -20,8 +20,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: setup
-      run: git config --global user.name "Ailko" ; git fetch origin ; git checkout -b master origin/master
+      run: git config --global user.name "Ailko" ; git clone https://github.com/Ailko/The-Adventures-of-Elena-Temple---speedrun-notation-and-routes.git
     - name: merge to master
-      run: git checkout main && git merge master --allow-unrelated-histories
+      run: git checkout main && git merge master
     - name: merge to main
-      run: git checkout master && git merge main --allow-unrelated-histories
+      run: git checkout master && git merge main
