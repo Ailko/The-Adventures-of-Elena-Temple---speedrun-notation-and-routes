@@ -19,5 +19,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: sync
-      run: git merge master && git push origin ; git checkout master && git merge main && git push origin
+    - name: merge to master
+      run: git merge origin/master
+    - name: git checkout origin/master && git merge main && git checkout main && git push origin
