@@ -37,7 +37,7 @@ There are quite a few collectibles in this game, we will be using these symbols 
 
 * `*`: This symbol next to a room will be used to denote any essential collectibles, like diamonds in Chalice of The Gods, or scrolls in 100% runs. E.g., `(3,4)*` means that in the room `(3,4)` we collect an essential collectible.
 * `$`: This symbol will, unsurprisingly, be used to denote collecting coins. To symbolize how many coins you collect in a given room we will put a number behind the symbol. E.g., `(4,3)$5` means we collected 5 coins in room `(4,3)`.
-* `%`: This symbol will be used to denote rooms where it is important to pick up ammo. E.g., `(5,2)Φ` means we picked up ammo in room `(5,2)`.
+* `%`: This symbol will be used to denote rooms where it is important to pick up ammo. E.g., `(5,2)%` means we picked up ammo in room `(5,2)`.
 * `!`: This symbol will denote the end of a dungeon. E.g., `(5,4)!` means room `(5,4)` is an ending room in a dungeon.
 
 These symbols will only be denoted in routes where they matter and will always be in order of importance behind a room: `(x,y)!*$%`.
